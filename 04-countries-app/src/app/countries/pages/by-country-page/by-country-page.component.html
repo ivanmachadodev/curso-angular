@@ -3,7 +3,7 @@
 <div class="row">
   <div class="col">
     <!-- Busqueda -->
-     <shared-search-box placheholder="Buscar por país" (searchTerm)="searchByCountry($event)"></shared-search-box>
+     <shared-search-box placheholder="Buscar por país" [initialValue]="initialValue" (searchTerm)="searchByCountry($event)"></shared-search-box>
   </div>
 </div>
 

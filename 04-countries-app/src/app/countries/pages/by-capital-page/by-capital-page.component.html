@@ -3,7 +3,7 @@
 <div class="row">
   <div class="col">
     <!-- Busqueda -->
-     <shared-search-box placheholder="Buscar por capital" (searchTerm)="searchByCapital($event)"></shared-search-box>
+     <shared-search-box [initialValue]="initialValue" placheholder="Buscar por capital" (searchTerm)="searchByCapital($event)"></shared-search-box>
   </div>
 </div>
 
@@ -11,6 +11,7 @@
   <div class="col">
     <!-- Resultados -->
     <hr>
+    <shared-loading-spinner *ngIf="isLoading"></shared-loading-spinner>
     <countries-table [countries]="countries"></countries-table>
   </div>
 </div>
