@@ -5,4 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './new-page.component.html',
   styles: ``,
 })
-export class NewPageComponent {}
+export class NewPageComponent {
+
+  publishers = [
+    {id: 'DC Comics', desc: 'DC Cómics'},
+    {id: 'Marvel Comics', desc: 'Marvel Cómics'},
+  ]
+
+}
