@@ -1,23 +1,22 @@
-import { Hero } from '../../interfaces/hero.interface';
-import { HeroesService } from './../../services/heroes.service';
 import { Component, OnInit } from '@angular/core';
+import { Hero } from '../../interfaces/hero.interface';
+import { HeroesService } from '../../services/heroes.service';
 
 @Component({
-  selector: 'heroes-list-page',
+  selector: 'app-list-page',
   templateUrl: './list-page.component.html',
-  styles: ``,
+  styles: [
+  ]
 })
-export class ListPageComponent implements OnInit{
+export class ListPageComponent implements OnInit {
 
-  heroes: Hero[] = [];
+  public heroes: Hero[] = [];
 
-  constructor(private heroService: HeroesService){}
+  constructor( private heroesService: HeroesService ) {}
 
   ngOnInit(): void {
-    this.heroService.getheroes()
-        .subscribe(heroes => this.heroes = heroes);
+    this.heroesService.getHeroes()
+      .subscribe( heroes => this.heroes = heroes );
   }
-
-
 
 }

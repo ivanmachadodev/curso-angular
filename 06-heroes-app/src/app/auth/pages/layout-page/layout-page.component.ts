@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'auth-layout-page',
+  selector: 'app-layout-page',
   templateUrl: './layout-page.component.html',
-  styles: ``
+  styles: [
+  ]
 })
 export class LayoutPageComponent {
 
