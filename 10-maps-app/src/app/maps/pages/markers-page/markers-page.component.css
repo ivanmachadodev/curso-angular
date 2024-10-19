@@ -1,0 +1,27 @@
+#map {
+  width: 100vw;
+  height: 100vh;
+}
+
+.list-group{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.list-group input{
+  cursor: pointer;
+}
+
+.list-group button{
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+button{
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
