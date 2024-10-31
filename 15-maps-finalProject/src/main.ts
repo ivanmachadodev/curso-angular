@@ -1,11 +1,12 @@
+import { AppModule } from './app/app.module';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { AppModule } from './app/app.module';
+import { environment } from './environments/environment';
 
 import mapboxgl from 'mapbox-gl';
 
-mapboxgl.accessToken =
-  'pk.eyJ1IjoiaXZhbm1hY2hhZG9kZXYiLCJhIjoiY20yZjhneWRyMDZjcTJrbjF6cjZ3cnN5ZyJ9.Av5y8iClQSMRsI5DijRU-Q';
+//Generate .env file with your access token
+mapboxgl.accessToken = environment.apiKey;
 
 if( !navigator.geolocation ) {
   alert('Navegador no soporta la geolocalización');
